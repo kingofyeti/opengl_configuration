@@ -1,8 +1,8 @@
-# GLFW/GLEW/GLM and NanoGUI configuration
+# GLFW/GLEW/GLM/Freeglut/AntTweakBar and NanoGUI configuration
 
-This is a windows version of GLFW/GLEW/GLM and nanogui binary file collection.
+This is a windows version of GLFW/GLEW/GLM/FreeGLUT/AntTweakBar and nanogui binary file collection.
 
-This version is used for Visual Studio 2015 Release/x64 mode.
+This version is used for Visual Studio 2015 Release(Debug)/x64 mode.
 
 For other versions of binary file, you can compile it on your own using cmake-gui windows version
 
@@ -28,7 +28,7 @@ e.g.
 
 2: Create your own empty project in Visual Studio 2015
 
-3: Add OPENGL.prop and then NANOGUI.prop(sequence should be the same) into Visual Studio Property Manager:
+3: Add each individual .prop files into Visual Studio Property Manager:
 ```
     View->Other Windows->Property Manager
     Add Existing Property Sheet
@@ -57,6 +57,10 @@ GLEW: [https://github.com/nigels-com/glew](https://github.com/nigels-com/glew)
 GLFW: [https://github.com/glfw/glfw](https://github.com/glfw/glfw)
 
 GLM: [https://github.com/g-truc/glm](https://github.com/g-truc/glm)
+
+FreeGLUT: [http://freeglut.sourceforge.net](http://freeglut.sourceforge.net)
+
+AntTweakBar: [http://anttweakbar.sourceforge.net/doc/](http://anttweakbar.sourceforge.net/doc)
 
 NanoGui: [https://github.com/wjakob/nanogui](https://github.com/wjakob/nanogui)
 

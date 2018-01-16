@@ -38,7 +38,7 @@ e.g.
 
 GLFW/GLEW/GLM Test:
 
-Add opengl_example/hellowindow2.cpp provided by LearnOpenGL into your project
+Add opengl_example/helloworld.cpp provided by LearnOpenGL into your project
 
 NanoGui Test:
 

@@ -28,7 +28,9 @@ e.g.
 
 2: Create your own empty project in Visual Studio 2015
 
-3: Add each individual .prop files into Visual Studio Property Manager:
+3: Add each OPENGL.prop + NANOGUI.prop files into Visual Studio Property Manager:
+(If you are using freeglut or antweakbar you can add it seperately, but do not put them all together with GLFW. It may cause some error when running the code)
+
 ```
     View->Other Windows->Property Manager
     Add Existing Property Sheet

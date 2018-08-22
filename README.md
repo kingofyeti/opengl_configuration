@@ -67,3 +67,5 @@ AntTweakBar: [http://anttweakbar.sourceforge.net/doc/](http://anttweakbar.source
 NanoGui: [https://github.com/wjakob/nanogui](https://github.com/wjakob/nanogui)
 
 Learn OpenGL: [https://github.com/JoeyDeVries/LearnOpenGL](https://github.com/JoeyDeVries/LearnOpenGL)
+
+STB: [https://github.com/nothings/stb](https://github.com/nothings/stb)

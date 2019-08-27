@@ -1,18 +1,20 @@
-# GLFW/GLEW/GLM/Freeglut/AntTweakBar and NanoGUI configuration
+GLFW/GLEW/GLM/Freeglut/AntTweakBar and NanoGUI configuration
 
 This is a windows version of GLFW/GLEW/GLM/FreeGLUT/AntTweakBar and nanogui binary file collection.
 
-This version is ONLY used for Visual Studio 2015 Release(Debug)/x64 mode.
+This version is ONLY used for Visual Studio 2019 Release(Debug)/x64 mode (Probabily it is also compatible for VS2015 and VS2017).
 
 For other versions of binary file, you can compile it on your own using cmake-gui windows version
 
 # Usage
 
+<b> Do This In Order </b>
+
 1: Add this folder into your system variables with:
 
 Variable name: OPENGL
 
-Variable value: YOUR_CURRENT_FOLDER
+Variable value: This repo that you just downloaded
 ```
 e.g.  
     Variable name: OPENGL
@@ -26,17 +28,38 @@ e.g.
     Variable value: D:\Program Files\opengl\dll
 ```
 
-2: Create your own empty project in Visual Studio 2015
+2: Create your own empty project in Visual Studio 2019
 
 3: Add each OPENGL.prop + NANOGUI.prop files into Visual Studio Property Manager（Release/Debug x64）:
 (If you are using freeglut or antweakbar you can add it seperately, but do not put them all together with GLFW. It may cause some error when running the code)
 
-```
-    View->Other Windows->Property Manager
-    Add Existing Property Sheet
-```
+3.a:  View->Other Windows->Property Manager
 
-4: Run code test:
+<img src="https://i.imgur.com/q4uePzR.png" />
+
+3.b: Add Existing Property Sheet
+
+<img src="https://i.imgur.com/UULN4Gd.png"/>
+
+Make sure the project name itself is selected before adding the existing property sheet. Select OPENGL.props and NANOGUI.props here(Please add OPENGL.props first) and they should appear in the debug and release folder once added
+
+4: Set build configurations to run on x64
+
+4.a: Project -> Properties -> Platform (at top)
+
+​		Value: Active(x64)
+
+4.b: Project -> Properties -> Linker -> Advanced -> Target Machine
+
+​		Value: MachineX64
+
+4.c: Build -> Configuration
+
+​		Configuration: Release
+
+​		Platform: x64
+
+5: Run code test:
 
 GLFW/GLEW/GLM Test:
 
@@ -53,6 +76,8 @@ Done
 Xcode verison of NanoGUI configuration: [http://jody-lu-blog.logdown.com/posts/1533525](http://jody-lu-blog.logdown.com/posts/1533525).
 
 Thanks for Jody Lu's help with Mac's configuration on Nanogui.
+
+Thanks for Manevle16's help with some update for vs2019.
 
 GLEW: [https://github.com/nigels-com/glew](https://github.com/nigels-com/glew)
 
